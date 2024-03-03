@@ -1,0 +1,119 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: ;
+}
+html,body{
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.back{
+    width: 100%;
+    height: 350px;
+}
+.ground{
+        width: 100px;
+        height: 150px;
+        position: absolute;
+        bottom: 300px;
+        right: 600px;
+        animation: birds 2s linear infinite forwards;
+}
+@keyframes birds{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+.bacc{
+    width: 100%;
+    position: absolute;
+    bottom: 250px;
+    right: 1px;
+}
+.helicopter{
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    bottom: 300px;
+    right: 100px;
+    animation: helly 3s linear  infinite forwards;
+}
+@keyframes helly{
+    from{
+        transform: translate(150px,0);
+    }
+
+    100%{
+        transform: translate(-1300px,0);
+    }
+}
+
+.road{
+    width: 100%;
+    height: 200px;
+}
+.chopper{
+    width: 150px;
+    height: 100px;
+    position: absolute;
+    bottom: 500px;
+    right: 60px;
+    animation: plane 4s linear infinite forwards;
+}
+@keyframes plane{
+    from{
+        transform: translate(130px,0);
+    }
+    to{
+        transform: translate(-1300px,0);
+    }
+}
+.one{
+    position: relative;left: 1200px;bottom: 250px;
+    animation: bike 5s linear infinite forwards;
+}
+@keyframes bike{
+    from{
+        transform: translate(130px,0);
+    }
+    to{
+        transform: translate(-1300px,0);
+    }
+}
+.two{
+    position: relative;left: 1000px;
+    bottom: 150px;
+    animation: car 6s linear infinite forwards;
+}
+@keyframes car{
+    from{
+        transform: translate(150px,0);
+    }
+    to{
+        transform: translate(-1200px,0);
+    }
+}
+.road2{
+    width: 100%;
+    height: 200px;
+    transform: translateY(-160px);
+}
+.tank{
+    width:100px;
+    height: 100px;
+    position: absolute;
+    bottom: 40px;
+    left: 900px;
+    animation: tank 8s linear  infinite forwards;
+}
+@keyframes tank{
+    from{
+        transform: translate(450px,0);
+    }
+    to{
+        transform: translate(-1200px,0);
+    }
+}
